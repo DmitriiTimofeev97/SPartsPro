@@ -5,9 +5,22 @@
 
 html
     font-size: 62.5%
+    background: $site-background-color
 
 ul
     list-style-type: none
 
 a
     text-decoration: none
+
+.container
+    display: grid
+    grid-template-rows: repeat(3, min-content)
+    grid-template-columns: 15vw repeat(2, 35vw) 15vw
+
+.upper-container
+    display: grid
+    grid-template-rows: min-content
+    grid-template-columns: min-content 1fr
+    grid-column: 2 / 4
+    column-gap: 30rem
