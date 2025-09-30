@@ -5,21 +5,61 @@
     grid-area: 2 / 2 / 3 / 4
     gap: 3rem
     padding-top: 8rem
+    @include respond(tab-port)
+        grid-template-rows: repeat(8, min-content)
+        column-gap: 0
+    @include respond(phone)
+        grid-template-columns: repeat(2, 47.5%)
+        grid-template-rows: repeat(5, min-content)
+        gap: 2rem
     &__title
         grid-area: 1 / 1 / 1 / 3
+        @include respond(tab-port)
+            grid-area: 1 / 1 / 2 / 4
+            padding-top: 5rem
+        @include respond(phone)
+            padding-top: 2rem
     &__up-left-card
         grid-area: 2 / 1 / 3 / 2
+        @include respond(tab-port)
+            grid-area: 2 / 1 / 3 / 3
+        @include respond(phone)
+            grid-area: 2 / 1 / 3 / 2
     &__up-right-card
         grid-area: 2 / 2 / 3 / 3
+        @include respond(tab-port)
+            grid-area: 3 / 1 / 4 / 3
+        @include respond(phone)
+            grid-area: 2 / 2 / 3 / 3
     &__mid-left-card
         grid-area: 3 / 1 / 4 / 2
+        @include respond(tab-port)
+            grid-area: 4 / 1 / 5 / 3
+        @include respond(phone)
+            grid-area: 3 / 1 / 4 / 2
     &__mid-right-card
         grid-area: 3 / 2 / 4 / 3
+        @include respond(tab-port)
+            grid-area: 5 / 1 / 6 / 3
+        @include respond(phone)
+            grid-area: 3 / 2 / 4 / 3
     &__bot-left-card
         grid-area: 4 / 1 / 5 / 2
+        @include respond(tab-port)
+            grid-area: 6 / 1 / 7 / 3
+        @include respond(phone)
+            grid-area: 4 / 1 / 5 / 2
     &__bot-right-card
         grid-area: 4 / 2 / 5 / 3
+        @include respond(tab-port)
+            grid-area: 7 / 1 / 8 / 3
+        @include respond(phone)
+            grid-area: 4 / 2 / 5 / 3
     &__btn-wrapper
         display: flex
         justify-content: center
         grid-area: 5 / 1 / 6 / 3
+        @include respond(tab-port)
+            grid-area: 8 / 1 / 9 / 3
+        @include respond(phone)
+            grid-area: 5 / 1 / 6 / 3

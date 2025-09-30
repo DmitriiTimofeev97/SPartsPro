@@ -5,6 +5,8 @@
     grid-area: 3 / 2 / 4 / 4
     gap: 3rem
     padding: 5rem 0
+    @include respond(tab-small)
+        padding: 3rem 0
     &__title
         grid-area: 1 / 1 / 2 / 3
     &__gallery
@@ -13,6 +15,10 @@
         grid-template-columns: repeat(2, 1fr)
         gap: 3rem
         grid-area: 2 / 1 / 3 / 2
+        @include respond(tab-port)
+            grid-area: 2 / 1 / 3 / 3
+        @include respond(phone)
+            gap: 1.5rem
     &__img1
         object-fit: cover
         width: 100%
@@ -33,6 +39,8 @@
         grid-template-rows: repeat(3, min-content)
         align-items: flex-end
         gap: 3rem
+        @include respond(tab-port)
+            grid-area: 3 / 1 / 4 / 3
     &__bold-text
         font-weight: 700
     &__list-item
