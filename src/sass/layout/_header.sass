@@ -1,6 +1,11 @@
-.header
+.header-nav-wrapper
     display: grid
-    grid-column: 1 / 1
-    justify-items: flex-start
+    grid-template-columns: min-content 1fr
+    grid-template-rows: repeat(2, min-content)
+    align-items: center
+    grid-column: 2 / 4
+    column-gap: 25%
+.header
+    grid-column: 1 / 2
     &__logo
         width: 21rem
