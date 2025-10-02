@@ -20,7 +20,7 @@
             align-items: center
             justify-content: flex-start
             height: 100vh
-            padding-left: 3rem
+            padding-right: 4rem
     &__list-item
         @include respond(tab-port)
             padding: 2rem 0
@@ -37,7 +37,7 @@
             color: $hover-color
 .nav-menu_active
     @include respond(tab-port)
-    top: 11%
+    top: 10%
 .hamburger
     display: none
     @include respond(tab-port)
@@ -46,6 +46,8 @@
         flex-direction: column
         justify-content: center
         align-items: center
+        right: 3rem
+        top: 1rem
         width: 5rem
         height: 5rem
         border: 1px solid $site-main-color
